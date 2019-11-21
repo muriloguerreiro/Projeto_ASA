@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block title %}Coordenação{% endblock %}
+
+{% block content %}
+
+<div class="row marketing">
+    <div class="jumbotron col-lg-12">
+        <h2>Portal do Estudante, </h2>
+        <p class="lead">O que você deseja fazer?</p>
+        <p><a class="btn btn-dark btn-success" href="{{ url_for('cadaluno') }}" role="button">Notas e Faltas</a>
+            <a class="btn btn-dark btn-success" href="{{ url_for('cadcurso') }}" role="button" style="margin-left: 10px;">Grade do Curso</a>
+    </div>
+</div>
+
+
+{% endblock %}

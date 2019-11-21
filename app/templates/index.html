@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block title %}Index{% endblock %}
+
+{% block content %}
+
+<div class="row marketing">
+  <div class="jumbotron col-lg-6">
+    <h2>Caro Aluno, </h2>
+    <p class="lead">Escolha a opção abaixo para acessar o Portal do Estudante.</p>
+    <p><a class="btn btn-dark btn-success" href="{{ url_for('login') }}" role="button">Acessar Conta</a>
+  </div>
+  <div class="jumbotron col-lg-6">
+      <h2>Área da Coordenação, </h2>
+      <p class="lead">Escolha a opção abaixo para acessar a Área da Coordenação.</p>
+      <p><a class="btn btn-dark btn-success" href="{{ url_for('login') }}" role="button">Acessar Coordenação</a>
+    </div>
+</div>
+
+  <div class="container-fluid row marketing">
+
+    <div class="col-lg-6" style="margin-left:5px">
+      <h4>Solicitações</h4>
+      <ul>
+        <li><p>Solicite matrícula em alguma disciplina.</p></li>
+        <li><p>Solicite trancamento parcial ou total.</p></li>
+        <li><p>Realize o ajuste de sua matrícula.</p></li>
+      </ul>
+    </div>
+
+    <div class="col-lg-5" style="margin-left: 30px;">
+      <h4>Consultas</h4>
+      <ul>
+        <li><p>Obtenha um atestado de matrícula.</p></li>
+        <li><p>Visualize sua grade curricular.</p></li>
+        <li><p>Consulte notas e faltas.</p></li>
+      </ul>
+    </div>
+
+  </div>
+
+  {% endblock %}

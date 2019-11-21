@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Coordenação{% endblock %}
+
+{% block content %}
+
+    <div class="jumbotron">
+        <h2>Área da Coordenação, </h2>
+        <p class="lead">O que você deseja cadastrar?</p>
+        <p><a class="btn btn-dark btn-success" href="{{ url_for('cadaluno') }}" role="button">Aluno</a>
+            <a class="btn btn-dark btn-success" href="{{ url_for('listagem') }}" role="button" style="margin-left: 10px;">Perfil</a>
+    </div>
+
+
+{% endblock %}
